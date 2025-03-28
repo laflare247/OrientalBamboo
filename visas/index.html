@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normolize.css" />
+    <link rel="stylesheet" href="./css/sytle.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link rel="stylesheet" href="./css/effects.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./image/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./image/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./image/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>ORIENTAL BAMBOO</title>
+  </head>
+  <body>
+    <div class="wparrer">
+      <header class="header">
+        <div class="container header-container">
+          <button class="header-burger" id="burger">
+            <span></span><span></span><span></span>
+          </button>
+          <a href="#" class="logo">
+            <img src="./image/logo.png" class="logo-img" />
+            <p class="logo-text">ORIENTAL BAMBOO</p>
+          </a>
+          <nav class="nav">
+            <div class="nav-items">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#" class="nav-link" id="nav_link_main">Главная</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-nav-link" onclick="openDropdown()"
+                  >
+                    <p id="nav_link_services">Услуги</p>
+                    <div class="nav-arrow"></div>
+                  </a>
+                  <div class="nav-sublist" id="dropdown">
+                    <a href="" class="nav-sublink" id="nav_sublink_school"
+                      >Языковая школа</a
+                    >
+                    <a href="" class="nav-sublink" id="nav_sublink_services"
+                      >Услуги для бизнеса</a
+                    >
+                    <a href="" class="nav-sublink" id="nav_sublink_visa"
+                      >Визы</a
+                    >
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link" id="reviews">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" id="contacts">Контакты</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#"
+                    class="nav-link nav-lang"
+                    onclick="changeLanguage('ru')"
+                    >Русский</a
+                  >
+                  /
+                  <a
+                    href="#"
+                    class="nav-link nav-lang"
+                    onclick="changeLanguage('en')"
+                    >English</a
+                  >
+                </li>
+              </ul>
+              <!-- <ul class="nav-list nav-list-contacts">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"> </a>
+                </li>
+              </ul> -->
+            </div>
+          </nav>
+          <div class="header-contacts">
+            <a href="tel:+66661075986" class="header-contact"
+              >+66 661 075 986
+            </a>
+            <img src="./image/social/ph.svg" />
+            <img src="./image/social/tg.svg" />
+            <img src="./image/social/wa.svg" />
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero-section">
+          <div class="circle" id="circle"></div>
+          <div class="container hero-container">
+            <div class="hero-item" id="hero1">
+              <div class="hero-item-content">
+                <h2 class="section-header hero-header" id="hero_header_1">
+                  Оказание профессиональных услуг в Таиланде для туристов и
+                  экспатов!
+                </h2>
+                <p class="hero-text" id="hero_text_1">
+                  «Oriental Bamboo» - ваш партнер в Таиланде! Мы предоставляем
+                  профессиональные услуги для туристов и экспатов. Языковая
+                  школа с курсами по английскому, французскому, китайскому и
+                  тайскому. Оформление виз, бизнес-поддержка и туристические
+                  услуги. Надежность и довольные клиенты за 10 лет работы. Добро
+                  пожаловать в Таиланд!
+                </p>
+                <div class="hero-btns">
+                  <a href="#" class="hero-btn btn black-btn" id="show_more_1"
+                    >Узнать больше</a
+                  >
+                  <a
+                    href="#"
+                    class="hero-btn btn"
+                    data-path="modalform"
+                    id="connet_1"
+                  >
+                    Связаться с нами
+                  </a>
+                </div>
+              </div>
+              <div class="hero-img">
+                <img src="./image/hero/hero1.jpg" class="hero-pic" />
+              </div>
+            </div>
+
+            <div class="hero-item displaynone" id="hero2">
+              <div class="hero-item-content">
+                <h2 class="section-header hero-header" id="hero_header_2">
+                  Студенческая виза (ED-Visa) в Таиланд с Oriental Bamboo - это
+                  просто и безопасно!
+                </h2>
+                <p class="hero-text" id="hero_text_2">
+                  Освойте языки с профессионалами - Oriental Bamboo! Наши
+                  преподаватели - носители языка, которые сделают учебный
+                  процесс увлекательным и результативным. А получение
+                  студенческой визы с нами - это просто и безопасно.
+                  Присоединяйтесь к нам и окунитесь в мир культурного обмена в
+                  Таиланде!
+                </p>
+                <div class="hero-btns">
+                  <a href="#" class="hero-btn btn black-btn" id="show_more_2"
+                    >Узнать больше</a
+                  >
+                  <a
+                    href="#"
+                    class="hero-btn btn"
+                    data-path="modalform"
+                    id="connet_2"
+                  >
+                    Связаться с нами
+                  </a>
+                </div>
+              </div>
+              <div class="hero-img">
+                <img src="./image/hero/hero2.jpg" class="hero-pic" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-section">
+          <div class="container about-container">
+            <h2 class="section-header" id="about">
+              Почему выбирают именно нас
+            </h2>
+            <div class="about-content">
+              <ul class="about-content-list">
+                <!-- <li class="about-content-item">
+                  <img
+                    src="./image/about-icons/1.svg"
+                    class="about-content-icon"
+                  />
+                  <p class="about-content-text" id="about_1">
+                    Самая крупная школа на Пхукете
+                  </p>
+                </li> -->
+                <li class="about-content-item">
+                  <img
+                    src="./image/about-icons/2.svg"
+                    class="about-content-icon"
+                  />
+                  <p class="about-content-text" id="about_2">
+                    Работаем более 10 лет
+                  </p>
+                </li>
+                <li class="about-content-item">
+                  <img
+                    src="./image/about-icons/3.svg"
+                    class="about-content-icon"
+                  />
+                  <p class="about-content-text" id="about_3">
+                    Занимаемся всеми типами виз
+                  </p>
+                </li>
+                <li class="about-content-item">
+                  <img
+                    src="./image/about-icons/4.svg"
+                    class="about-content-icon"
+                  />
+                  <p class="about-content-text" id="about_4">
+                    Возможность изучения сразу нескольких языков с носителями
+                  </p>
+                </li>
+                <li class="about-content-item">
+                  <img
+                    src="./image/about-icons/5.svg"
+                    class="about-content-icon"
+                  />
+                  <p class="about-content-text" id="about_5">Доступные цены</p>
+                </li>
+                <li class="about-content-item">
+                  <a
+                    href="#"
+                    class="about-btn btn"
+                    data-path="modalform"
+                    id="contact_us"
+                  >
+                    Оставить заявку
+                  </a>
+                </li>
+              </ul>
+              <div class="slider-container">
+                <div class="slider">
+                  <img src="./image/slider/1.jpg" />
+                  <img src="./image/slider/2.jpg" />
+                  <img src="./image/slider/3.jpg" />
+                  <img src="./image/slider/4.jpg" />
+                  <img src="./image/slider/5.jpg" />
+                  <img src="./image/slider/6.jpg" />
+                  <img src="./image/slider/7.jpg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services-section">
+          <div class="container services-container">
+            <h2 class="section-header" id="services">Услуги</h2>
+            <div class="services-content">
+              <div class="services-item services-left">
+                <img
+                  src="./image/services/services1.png"
+                  class="services-left-img"
+                />
+                <h3 class="services-item-header" id="services_1">
+                  Услуги для бизнеса
+                </h3>
+                <ul class="services-item-list">
+                  <li class="services-item-li" id="services_11">
+                    Открытие компании
+                  </li>
+                  <li class="services-item-li" id="services_12">
+                    Аудиторские услуги
+                  </li>
+                  <li class="services-item-li" id="services_13">
+                    Бизнес визы (NON-B VISA / Workpermit)
+                  </li>
+                  <li class="services-item-li" id="services_14">
+                    Юридические услгуи
+                  </li>
+                  <li class="services-item-li" id="services_15">
+                    Консультации
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn services-btn green-btn"
+                  id="more_details_1"
+                  >Подробнее</a
+                >
+                <a href="#" class="btn services-btn" id="manager_1"
+                  >Связаться с менеджером</a
+                >
+              </div>
+
+              <div class="services-item services-right">
+                <img
+                  src="./image/services/services2.png"
+                  class="services-right-img"
+                />
+                <h3 class="services-item-header" id="services_2">
+                  Услуги для туристов/экспатов
+                </h3>
+                <ul class="services-item-list">
+                  <li class="services-item-li" id="services_21">
+                    Оформление виз любого типа
+                  </li>
+                  <li class="services-item-li" id="services_22">
+                    Услуги по открытия банковского счета
+                  </li>
+                  <li class="services-item-li" id="services_23">
+                    Водительские права
+                  </li>
+                  <li class="services-item-li" id="services_24">
+                    Иммиграционные услуги
+                  </li>
+                  <li class="services-item-li" id="services_25">
+                    Бордер ран/Виза ран
+                  </li>
+                </ul>
+                <a
+                  href="#"
+                  class="btn services-btn blue-btn"
+                  id="more_details_2"
+                  >Подробнее</a
+                >
+                <a href="#" class="btn services-btn" id="manager_2"
+                  >Связаться с менеджером</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="find-section">
+          <div class="container find-container">
+            <img src="./image/find/find.png" class="find-img" />
+            <h2 class="section-header" id="find">Как нас найти</h2>
+            <div class="find-content">
+              <ul class="find-list">
+                <li class="find-item">
+                  <img
+                    src="./image/find/find1.svg"
+                    class="find-item-img find-img-1"
+                  />
+                  <div class="find-item-content">
+                    <p class="find-item-text" id="find_phone">Телефон:</p>
+                    <a href="" class="find-item-link"> +66661075986</a>
+                  </div>
+                </li>
+
+                <li class="find-item">
+                  <img src="./image/find/find2.svg" class="find-item-img" />
+                  <div class="find-item-content">
+                    <p class="find-item-text" id="find_time_1">Режим работы:</p>
+                    <a href="" class="find-item-link" id="find_time_2">
+                      Пн. - Сб. с 8:00 до 17:00 Вс - выходной</a
+                    >
+                  </div>
+                </li>
+
+                <li class="find-item">
+                  <img src="./image/find/find3.svg" class="find-item-img" />
+                  <div class="find-item-content">
+                    <p class="find-item-text" id="find_mail">Почта:</p>
+                    <a href="" class="find-item-link"
+                      >orientalbamboolanguage@gmail.com</a
+                    >
+                  </div>
+                </li>
+                <li class="find-item">
+                  <img src="./image/find/find4.svg" class="find-item-img" />
+                  <div class="find-item-content">
+                    <p class="find-item-text" id="find_adress">Адрес:</p>
+                    <a href="" class="find-item-link">
+                      4, 12 Satun Rd, Tambon Talat Nuea, Mueang Phuket District,
+                      Phuket 83000</a
+                    >
+                  </div>
+                </li>
+              </ul>
+              <div class="find-map">
+                <iframe
+                  class="iframe"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.080359749618!2d98.38556179999999!3d7.886661400000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305031effd6e7bcf%3A0x1a6adddb416f02f9!2sOriental%20Bamboo%20Language%20School!5e0!3m2!1sru!2sth!4v1691253393123!5m2!1sru!2sth"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container footer-container">
+          <a href="#" class="logo">
+            <img src="./image/logo.png" class="logo-img footer-logo-img" />
+            <p class="logo-text footer-logo">ORIENTAL BAMBOO</p>
+          </a>
+          <div class="footer-content">
+            <ul class="footer-list">
+              <li class="footer-item" id="footer_main">Главная</li>
+              <li class="footer-item" id="footer_services">Услуги</li>
+              <li class="footer-item" id="footer_services_1">
+                Услуги для бизнеса
+              </li>
+              <li class="footer-item" id="footer_school">Языковая школа</li>
+              <li class="footer-item" id="footer_visa">Визы</li>
+              <li class="footer-item" id="footer_review">Отзывы</li>
+            </ul>
+            <ul class="footer-list">
+              <li class="footer-item">
+                <img src="./image/footer/footer1.svg" />
+                <a href="#">Facebook</a>
+              </li>
+              <li class="footer-item">
+                <img src="./image/footer/footer2.svg" />
+                <a href="#">Telegram</a>
+              </li>
+              <li class="footer-item">
+                <img src="./image/footer/footer3.svg" />
+                <a href="#">Instagram</a>
+              </li>
+              <li class="footer-item">
+                <img src="./image/footer/footer4.svg" />
+                <a href="#">Вконтакте</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="modals">
+      <div class="modal-overlay">
+        <div class="modal modal-form" data-target="modalform">форма</div>
+        <div class="modal modal-test" data-target="modaltest">тест</div>
+      </div>
+    </div>
+    <script src="./script.js" defer></script>
+    <script src="./translate.js" defer></script>
+  </body>
+</html>
